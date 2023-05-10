@@ -22,22 +22,30 @@ body .container .menu-left .ul-menu li a {
   color: #fff;
 }
 body .container .center {
-  display: flow-root;
-  float: left;
+  display: grid;
   width: 80%;
+  background: #e8e7e7;
 }
 body .container .center .card {
-  display: table;
   width: 100%;
 }
 body .container .center .card .item-card {
-  width: 25%;
-  display: inline-flex;
-  float: left;
+  width: 27%;
+  display: inline-grid;
+  height: 200px;
+  background: #fff;
+  margin: 2px 5px;
+  border-radius: 5px;
 }
 body .container .center .card .item-card .image, body .container .center .card .item-card .title, body .container .center .card .item-card .company, body .container .center .card .item-card .item-working {
-  display: table;
+  display: block;
   width: 100%;
+  text-align: center;
+}
+body .container .center .card .item-card .item-working .item-list {
+  display: inline-grid;
+  width: 30%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

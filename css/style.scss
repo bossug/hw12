@@ -24,19 +24,31 @@ body {
             }
         }
         .center {
-            display: flow-root;
-            float: left;
+            display: grid;
+           // float: left;
             width: 80%;
+            background: #e8e7e7;
             .card {
-                display: table;
+                //display: flex;
                 width: 100%;
                 .item-card {
-                    width: 25%;
-                    display: inline-flex;
-                    float: left;
+                    width: 27%;
+                    display: inline-grid;
+                    height: 200px;
+                    background: #fff;
+                    margin: 2px 5px;
+                    border-radius: 5px;
                     .image, .title, .company, .item-working {
-                        display: table;
+                        display: block;
                         width: 100%;
+                        text-align: center;
+                    }
+                    .item-working {
+                        .item-list {
+                            display: inline-grid;
+                            width: 30%;
+                            text-align: center;
+                        }
                     }
                 }
             }
