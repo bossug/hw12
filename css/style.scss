@@ -1,14 +1,14 @@
 body {
     .container {
-        width: 1200px;
+        width: 1400px;
+        display: grid;
+        grid-template-columns: 15% 1fr;
         margin: auto;
         .menu-left {
             background: #000;
             color: #fff;
             display: inline-flex;
-            width: 20%;
             min-height: 100%;
-            float: left;
             .ul-menu {
                 li {
                     list-style: none;
@@ -26,28 +26,40 @@ body {
         .center {
             display: grid;
            // float: left;
-            width: 80%;
-            background: #e8e7e7;
+            background: #FAFAFA;
             .card {
-                //display: flex;
-                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+                grid-gap: 30px;
+                margin: 20px 20px;
                 .item-card {
-                    width: 27%;
-                    display: inline-grid;
-                    height: 200px;
+                    display: grid;
+                    min-height: 400px;
                     background: #fff;
-                    margin: 2px 5px;
-                    border-radius: 5px;
+                    margin: 2px 1px;
+                    border-radius: 17px;
+
                     .image, .title, .company, .item-working {
-                        display: block;
-                        width: 100%;
                         text-align: center;
+                        align-items: start;
+                        align-content: end;
                     }
                     .item-working {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
                         .item-list {
-                            display: inline-grid;
-                            width: 30%;
                             text-align: center;
+                        }
+                    }
+                    .button {
+                        align-self: center;
+                        display: grid;
+                        button {
+                            padding: 10px;
+                            background-color: #FAFAFA;
+                            border-radius: 20px;
+                            border: 1px solid #ccc;
+                            margin: auto;
                         }
                     }
                 }
