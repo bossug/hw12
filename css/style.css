@@ -1,0 +1,43 @@
+body .container {
+  width: 1200px;
+  margin: auto;
+}
+body .container .menu-left {
+  background: #000;
+  color: #fff;
+  display: inline-flex;
+  width: 20%;
+  min-height: 100%;
+  float: left;
+}
+body .container .menu-left .ul-menu li {
+  list-style: none;
+  line-height: 40px;
+}
+body .container .menu-left .ul-menu li span {
+  padding-right: 10px;
+}
+body .container .menu-left .ul-menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+body .container .center {
+  display: flow-root;
+  float: left;
+  width: 80%;
+}
+body .container .center .card {
+  display: table;
+  width: 100%;
+}
+body .container .center .card .item-card {
+  width: 25%;
+  display: inline-flex;
+  float: left;
+}
+body .container .center .card .item-card .image, body .container .center .card .item-card .title, body .container .center .card .item-card .company, body .container .center .card .item-card .item-working {
+  display: table;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

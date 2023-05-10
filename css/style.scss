@@ -1,0 +1,45 @@
+body {
+    .container {
+        width: 1200px;
+        margin: auto;
+        .menu-left {
+            background: #000;
+            color: #fff;
+            display: inline-flex;
+            width: 20%;
+            min-height: 100%;
+            float: left;
+            .ul-menu {
+                li {
+                    list-style: none;
+                    line-height: 40px;
+                    span {
+                        padding-right: 10px;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .center {
+            display: flow-root;
+            float: left;
+            width: 80%;
+            .card {
+                display: table;
+                width: 100%;
+                .item-card {
+                    width: 25%;
+                    display: inline-flex;
+                    float: left;
+                    .image, .title, .company, .item-working {
+                        display: table;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
